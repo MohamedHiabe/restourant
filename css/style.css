@@ -1,0 +1,189 @@
+:root {
+    --main-color: #39DB4A;
+}
+.logo {
+    color: var(--main-color);
+    text-align: center;
+    font-weight: bold;
+}
+.food {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.hero {
+    width: 270px;
+    position: absolute;
+    bottom:28%;
+    right: 26%;
+}
+.hero:hover {
+    transform: rotate(25%);
+    animation: zig 0.5s infinite;
+    cursor: pointer;
+}
+.back {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+@keyframes zig {
+    0% {
+        rotate: 0deg;
+        translate: 1px;
+    }
+    25% {
+        rotate: 1deg;
+        translate: 0;
+    }
+    50% {
+        rotate: 0deg;
+        translate: -1;
+    }
+    75% {
+        rotate: -1deg;
+        translate: 0px;
+    }
+    100% {
+        rotate: 0deg;
+        translate: 1px;
+    }
+}
+.card1 {
+    border: 2px solid white;
+    width: 40%;
+    border-radius: 15px;
+    padding: 4px;
+    
+}
+.card2 {
+    border: 2px solid white;
+    width: 40%;
+    border-radius: 15px;
+    padding: 4px;
+    
+}
+.noodles {
+    border-radius: 15px;
+    width: 30% !important;
+    height: 60px !important;
+    margin: 8px;
+}
+.freshVegetable {
+    border-radius: 15px;
+    width: 30% !important;
+    height: 60px !important;
+    margin: 8px;
+
+}
+.back1 {
+    width: 70px;
+    height: 70px;
+    background-color: #C1F1C6;   
+    border-radius: 50%; 
+    position: absolute;
+    top: 13%;
+    left: 36%;
+    z-index: 1;
+
+}
+.card3 {
+    position: relative;
+    height: 100%;
+}
+.mainDish {
+    z-index: 2;
+    width: 23%;
+}
+.salad {
+    width: 80%;
+    margin: auto;
+}
+.card4 {
+    width: 80%;
+}
+.backChef {
+    height: 280px;
+    width: 300px;
+    background-color: var(--main-color);
+    border-radius: 90px 90px 21px 21px;
+}
+.chefBackground {
+    position: relative;
+}
+.chef {
+    width: 240px;
+    position: absolute;
+    top: 14%;
+    left: 9%;
+}
+.BestChefBack {
+    width: 180px;
+    height: 37px;
+    background-color: #FFFFFF;
+    border-radius: 90px 90px 90px 90px;
+    position: absolute;
+    left: 13%;
+    top: 80%;
+    
+}
+.BestChef {
+    position: absolute;
+    left: 19%;
+    top: 83%;
+}
+
+i {
+    color: var(--main-color);
+}
+.content{
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    flex-direction: row;
+    margin-top: 40px;
+}
+.content .box{
+    /* width: 340px;
+    margin: 20px; */
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .content .box .imgbx{
+    position: relative;
+    width: 120px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.content .box .imgbx img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content .box .text{
+    text-align: center;
+}
+ .content .box .text h3{
+    margin-top: 20px;
+    color: #c98847;
+    font-size: 1rem;
+}
+ .content .box .text p{
+    font-style: initial;
+    color: #666;
+}
+.contact{
+    background-image: url(/images/pexels-cottonbro-studio-4069292.jpg);
+    /* background-image: url(images/a.jpeg); */
+    background-size: cover;
+    padding: 40px;
+}
